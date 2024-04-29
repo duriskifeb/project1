@@ -31,6 +31,7 @@ a {
   justify-content: space-between;
 }
 
+h1,
 .nav-judul {
   flex: 1; /* Mengatur judul agar bisa memanjang ke semua sisa ruang */
   text-align: center; /* Membuat teks judul menjadi tengah */
@@ -70,24 +71,7 @@ a {
   background-image: url(/Image/Background.png);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Menetapkan gambar latar belakang agar tetap di posisinya */
-}
-
-.home::before {
-  content: " ";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 100;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.5s ease-out;
-}
-
-.home.show::before {
-  opacity: 1;
-  pointer-events: auto;
+  background-attachment: fixed; /* Menetapkan gambar latar belakang agar tetap di posisinya saat digulir */
 }
 
 /* form */
@@ -103,9 +87,6 @@ a {
   padding: 25px;
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.4s ease-out;
 }
 .home.show .form-container {
   opacity: 1;
@@ -173,6 +154,7 @@ a {
 .input-box i.pw_hide {
   right: 0;
   font-size: 18px;
+  cursor: pointer;
 }
 
 /* pilihan jika opsi salah atau sebagai pengingat */
@@ -185,6 +167,7 @@ a {
 .form-container a {
   color: #99e40e;
   font-size: 12px;
+  padding: 3px;
 }
 
 .form-container a:hover {
