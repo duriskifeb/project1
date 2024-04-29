@@ -16,5 +16,5 @@ signupBtn.addEventListener("cilick", (e) => {
 
 loginBtn.addEventListener("cilick", (e) => {
     e.preventDefault();
-    formContainer.classList.add("active");
+    formContainer.classList.remove("active");
 });
