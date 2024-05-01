@@ -68,7 +68,7 @@ h1,
   height: 100vh;
   width: 100%;
   background-color: grey;
-  background-image: url(/Image/Background.png);
+  background-image: url(/Image/Example.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Menetapkan gambar latar belakang agar tetap di posisinya saat digulir */
@@ -231,4 +231,61 @@ h1,
 
 .social-icons a {
   margin-right: 10px;
+}
+/* Media Queries */
+/* Tablet */
+@media (max-width: 758px) {
+  .header {
+    height: 70px; /* Atur tinggi header untuk tablet */
+  }
+
+  .nav {
+    padding: 0 20px; /* Tambahkan padding ke nav untuk tablet */
+  }
+
+  .nav-judul {
+    font-size: 20px; /* Perkecil ukuran font judul untuk tablet */
+  }
+
+  .footer {
+    padding: 15px 0; /* Sesuaikan padding footer untuk tablet */
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  .header {
+    height: 60px; /* Atur tinggi header untuk ponsel */
+  }
+
+  .nav {
+    padding: 0 10px; /* Tambahkan padding ke nav untuk ponsel */
+  }
+
+  .nav-judul {
+    font-size: 18px; /* Perkecil ukuran font judul untuk ponsel */
+  }
+
+  .footer {
+    padding: 10px 0; /* Sesuaikan padding footer untuk ponsel */
+  }
+
+  .form-container {
+    max-width: 280px; /* Atur lebar form container untuk ponsel */
+    padding: 20px; /* Atur padding form container untuk ponsel */
+  }
+
+  .input-box input {
+    padding: 0 20px; /* Sesuaikan padding input box untuk ponsel */
+  }
+
+  .btn-log {
+    margin-top: 20px; /* Sesuaikan margin atas tombol login untuk ponsel */
+    padding: 10px 0; /* Sesuaikan padding tombol login untuk ponsel */
+  }
+
+  .login-signup {
+    margin-top: 10px; /* Sesuaikan margin atas login/signup link untuk ponsel */
+    font-size: 11px; /* Perkecil ukuran font login/signup link untuk ponsel */
+  }
 }
